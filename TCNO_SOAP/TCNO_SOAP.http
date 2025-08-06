@@ -1,0 +1,15 @@
+@TCNO_SOAP_HostAddress = http://localhost:5123
+
+### TCKN Doğrulama Testi
+POST {{TCNO_SOAP_HostAddress}}/api/kimlik/dogrula
+Content-Type: application/json
+
+{
+    "TC": "12345678901",
+    "Ad": "Ahmet",
+    "Soyad": "Yılmaz",
+    "DogumYili": 1990
+}
+
+### Swagger UI
+GET {{TCNO_SOAP_HostAddress}}/swagger
